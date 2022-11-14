@@ -1,34 +1,46 @@
 <?php
 
-$teman = ['hasan', 'iqbal', 'erlana', 'arjuna', 'buqori', 'piskal', 'adi', 'fahmi', 'asraf', 'rizal'];
+//Penggunaan Array menggunakan for
+//For perulangan yg akan di ulang sesuai set yg kita atur
 
-array_push($teman, 'awa','caca');
+//Variabel angka memiliki nilai pertama = 0 dan diakhiri kurang atau sama dengan 10, dihitung increment
+// for($angka = 0; $angka+=10; $angka++){
+//     echo "angkanya adalah : $angka <br>";
+// }
 
-echo $teman[0];
-echo ", ";
-echo $teman[1];
-echo ", ";
-echo $teman[2];
-echo ", ";
-echo $teman[3];
-echo ", ";
-echo $teman[4];
-echo ", ";
-echo $teman[5];
-echo ", ";
-echo $teman[6];
-echo ", ";
-echo $teman[7];
-echo ", ";
-echo $teman[8];
-echo ", ";
-echo $teman[9];
+//foreach
+//foreach mengulang sesuai nilai yg mau di ambil (key)
+$warna = array("merah","hijau","biru","kuning");
 
-echo "<br />";
+// foreach ($warna as $variasi){
+//     echo "berwarna : $variasi";
+// }
 
-echo $teman[10];
-echo ", ";
-echo $teman[11];
 
+//Tugas  menerapkan for dan foreach menggunakan php
+$days = ["senin","selasa","rabu","kamis","jumat","sabtu","minggu"];
 
 ?>
+
+
+<html>
+    <head>
+        <title>Latihan menggunakan for dan foreach</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <?php
+        for ($hari = 0; $hari < count($days); $hari++){
+            ?>
+        <div class="box">
+            <?php echo $days[$hari];?>
+        </div>
+        <?php } ?>
+        <div class="clear"></div>
+        <?php foreach($days as $hari_hari) { ?>
+            <div class="box2">
+                <?php echo $hari_hari;?>
+            </div>
+        <?php } ?>
+    </body>
+</html>

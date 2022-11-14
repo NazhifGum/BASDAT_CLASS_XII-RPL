@@ -1,0 +1,21 @@
+.box {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(185, 155, 215);
+    text-align: center;
+    line-height: 50px;
+    margin: 3px;
+    float: left;
+}
+.box2 {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(182, 111, 176);
+    text-align: center;
+    line-height: 50px;
+    margin: 3px;
+    float: left;
+}
+.clear{
+    clear: both;
+}
